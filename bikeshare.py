@@ -38,8 +38,7 @@ def get_filters():
     day = ''
     while day not in weekday_names:
         print('Displaying the user input for day...')
-        print("From Sunday to Saturday, Kindly Indicate The Day You Wish To Choose From: ")
-        day = input().lower()
+        day = input("From Sunday to Saturday, Kindly Indicate The Day You Wish To Choose From:\n Answer: ").lower()
         if day in weekday_names:
             print('You have typed an invalid input, please try again later')
             print("Make sure you entered the day of the week in small letters")
