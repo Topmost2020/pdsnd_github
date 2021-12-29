@@ -163,11 +163,12 @@ def trip_duration_stats(df):
     # converting time to days, hours, minutes and seconds
     Total_Travel_Time = df['Trip Duration'].sum()
 
-    print('Displaying keys to check number of hour(s), minute(s) and second(s)')
+    print('Displaying keys to check number of day(s), hour(s), minute(s) and second(s)')
+    Total_Travel_Time_in_days = (Total_Travel_Time // 86400)
     Total_Travel_Time_in_hours = ((Total_Travel_Time % 86400) // 3600)
     Total_Travel_Time_in_minutes = (((Total_Travel_Time % 86400) % 3600) // 60)
     Total_Travel_Time_in_seconds = (((Total_Travel_Time % 86400) % 3600) % 60)
-    print('The Trip Took: {} hour(s), {} minute(s), {} second(s).'.format(Total_Travel_Time_in_hours,
+    print('The Trip Took: {} day(s), {} hour(s), {} minute(s), {} second(s).'.format(Total_Travel_Time_in_days, Total_Travel_Time_in_hours,
     Total_Travel_Time_in_minutes, Total_Travel_Time_in_seconds))
 
 
