@@ -3,7 +3,7 @@ This project was created on the 1st December, 2021.
 In addition, the Readme file for this project was also written on 26th December, 2021.
 
 ### Project Title
-Bikeshare Project
+United States Bikeshare Project
 
 ### Description
 In this project, I explored data related to bike share systems for three major cities in the United States- Chicago, New York City, and Washington. Also, I used different libraries to answer amazing questions by computing descriptive statistics.
