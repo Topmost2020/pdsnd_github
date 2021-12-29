@@ -22,8 +22,7 @@ def get_filters():
     city = ''
     while city not in CITY_DATA.keys():
         print("\nYou are Welcome to this Bikeshare Program")
-        print("Kindly Indicate The City You Wish To Choose From:\nChicago or New York City or Washington")
-        city = input().lower()
+        city = input("Kindly Indicate The City You Wish To Choose From:\n(a) Chicago \n(b) New York City \n(c) Washington \nAnswer: ").lower()
         if city not in CITY_DATA.keys():
             print('You have typed an invalid input, please try again later')
             print("Make sure your entered the city name in small letters")
@@ -31,7 +30,6 @@ def get_filters():
     month = ''
     while month not in month_list:
         print('Displaying the user input for month...')
-        print("From January to June, Kindly Indicate The Month You Wish To Choose From: ")
         month = input("From January to June, Kindly Indicate The Month You Wish To Choose From:\n Answer: ").lower()
         if month not in month_list:
             print('You have typed an invalid input, please try again later')
@@ -40,8 +38,7 @@ def get_filters():
     day = ''
     while day not in weekday_names:
         print('Displaying the user input for day...')
-        print("From Sunday to Saturday, Kindly Indicate The Day You Wish To Choose From: ")
-        day = input().lower()
+        day = input("From Sunday to Saturday, Kindly Indicate The Day You Wish To Choose From:\n Answer: ").lower()
         if day in weekday_names:
             print('You have typed an invalid input, please try again later')
             print("Make sure you entered the day of the week in small letters")
